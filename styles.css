@@ -22,13 +22,13 @@ body {
 .navbar {
     position: fixed;
     width: 100%;
-    background: rgba(255, 255, 255, 0.95);
-    padding: 1rem;
+    background: rgba(255, 255, 255, 0.5); /* 50% transparency */
+    padding: 0.8rem; /* 20% thinner than original 1rem */
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center; /* Center all children horizontally */
     gap: 2rem;
 }
 
@@ -37,12 +37,19 @@ body {
     font-weight: bold;
 }
 
+.nav-brand.left-align {
+    margin-right: 2rem; /* Space between brand and menu */
+    text-align: left;
+}
+
 .nav-menu {
     display: flex;
-    list-style: none;
-    gap: 2rem;
-    margin: 0;
     align-items: center;
+    justify-content: flex-start; /* Align menu items to the left */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 1.5rem; /* Space between menu items */
 }
 
 .nav-menu a {
@@ -297,4 +304,4 @@ footer {
 
 .welcome-message.fade-out {
     opacity: 0;
-} 
+}
