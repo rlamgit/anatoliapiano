@@ -48,7 +48,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // Fade out after 3 seconds
     setTimeout(() => {
         welcomeMessage.classList.add('fade-out');
-    }, 3500);
+    }, 5500);
 });
 
 // Keep the mobile menu functionality
