@@ -27,8 +27,16 @@
         <div class="welcome-message">
             <h1>Welcome to Anatolia Piano</h1>
             <p>Classical Piano Instruction in Anatolia Community of Rancho Cordova, California</p>
+            <p id="mobile-warning" style="display:none; color: #ffcc00; font-weight: bold; margin-top: 1rem;"></p>
         </div>
     </section>
+    <script>
+        // Show a warning if on a mobile device
+        if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+            document.getElementById('mobile-warning').textContent = "Best viewed on a full browser. Some features may not display optimally on mobile devices.";
+            document.getElementById('mobile-warning').style.display = "block";
+        }
+    </script>
 
     <section id="about" class="parallax-section">
         <div class="content">
