@@ -188,6 +188,10 @@ body {
     text-align: center;
 }
 
+.lesson-card h3 {
+    color: white;
+}
+
 .about-card {
     background: rgba(115, 91, 91, 0.9);
     padding: 2rem;
