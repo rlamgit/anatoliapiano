@@ -45,10 +45,10 @@ window.addEventListener('DOMContentLoaded', () => {
         welcomeMessage.classList.add('fade-in');
     }, 500);
 
-    // Fade out after 3 seconds
+    // Fade out after 10 seconds
     setTimeout(() => {
         welcomeMessage.classList.add('fade-out');
-    }, 5500);
+    }, 10500);
 });
 
 // Keep the mobile menu functionality
