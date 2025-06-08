@@ -234,10 +234,16 @@ body {
 
 /* Footer */
 footer {
-    background: var(--primary-color);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 2000;
+    background: rgba(44, 62, 80, 0.0); /* 80% transparent */
     color: white;
     text-align: center;
     padding: 1rem;
+    pointer-events: auto;
 }
 
 /* Responsive Design */
